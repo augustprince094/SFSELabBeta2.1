@@ -1,0 +1,147 @@
+
+@import url("https://fonts.googleapis.com/css?family=Nunito|Lacquer");
+body {  margin-left: 5em; margin-right: 5em;
+    /* margin-top: 1em ; margin-left: 5em; margin-right: 5em; */
+    /* font-family: Arial, Helvetica, sans-serif; */
+  }
+  
+/*SFS Logo*/
+.responsive { width: 100%; height: auto;
+}
+
+/* nav bar */
+/* body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 15px 18px 40px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Sliding Hero image */
+#section {
+  width: 100%;
+  height: 800px;
+  background: #ccc;
+  margin: 0;
+  padding: 0;
+}
+
+.slide-show-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+/* CSS Styles in common for all slides */
+.wrapper-one,
+.wrapper-two,
+.wrapper-three, 
+.wrapper-four {font-family: Arial, Helvetica, sans-serif;
+   background-color: linear-gradient(rgba(53, 30, 30, 0.5), rgba(94, 55, 55, 0.5));
+  /* background-image: linear-gradient(rgba(53, 30, 30, 0.5), rgba(94, 55, 55, 0.5)); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* CSS Styles for each slide */
+/* Just add the image as background attribute and add some animation */
+
+
+.wrapper-one {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/socailevent.jpeg);
+}
+
+.wrapper-two {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/MicrosoftTeams-image\ \(16\).png);
+  animation: slideTwoAnim 20s infinite;
+}
+
+.wrapper-three {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/social13.jpeg);
+  animation: slideThreeAnim 20s infinite;
+}
+
+.wrapper-four {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/social5.jpg);
+animation: slideFourAnim 15s infinite;
+}
+  /* Styles for the text */
+  .wrapper-text {
+    font: 700 40px/1.4 Roboto;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 150px;
+  }
+  
+  /* Animations */
+  @keyframes slideTwoAnim {
+      0%{opacity:0;}
+      17%{opacity:0;}
+      33%{opacity:1;}
+      50%{opacity:1;}
+      67%{opacity:0;}
+      100%{opacity:0;}
+  }
+  
+  @keyframes slideThreeAnim {
+      0%{opacity:0;}
+      50%{opacity:0;}
+      67%{opacity:1;}
+      83%{opacity:1;}
+      100%{opacity:0;}
+  }
+  @keyframes slideFourAnim {
+    0%{opacity:0;}
+    40%{opacity:0;}
+    55%{opacity:1;}
+    83%{opacity:1;}
+    100%{opacity:0;}
+}
+
+  .button {
+    background-color: #4CAF50;
+    border-radius: 50px;
+    border:none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  } 
+  .hero-text {
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    position: absolute;
+    top: 88%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    color: white;
+  } 

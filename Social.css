@@ -1,0 +1,72 @@
+/* Project Gallery for Zambia  */
+
+@import url("https://fonts.googleapis.com/css?family=Nunito|Lacquer");
+body {
+  margin-left: 1em; margin-right: 1em; margin-top: 1.5em;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+ 
+
+
+
+
+
+/* Slideshow container */
+
+.mySlides1, .mySlides2, .mySlides4 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container_project {
+  max-width: 800px; 
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev_project, .next_project {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next_project {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev_project:hover, .next_project:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+/* Caption text */
+.text_project {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 20px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.dot_project {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
